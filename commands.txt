@@ -1,0 +1,4 @@
+az account set -s '4db4428e-5add-4eed-90f9-d271b870f385'
+$location = "AustraliaEast"
+az group create -n "rg-jnicholl-test-001" -l $location --tags "CostCenter=TBC" "Environment=Dev"
+az configure --defaults group="rg-jnicholl-test-001" -n "0.1"
